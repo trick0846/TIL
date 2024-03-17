@@ -1,0 +1,31 @@
+{% extends "articles/base.html" %}
+{% load static %}
+{% block content %}
+
+<div class="container mt-4 p-5">
+  <h3 class="en text-center"> Hello, world!</h3>
+  <div class="row">
+    <div class="col col-12 col-md-6">
+      <div class="card p-2 my-2">
+        <img src="{% static "R.png" %}"  class="card-img-top d-inline-block m-auto w-50" alt="...">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title text-center en">R</h5>
+          <p class="card-text text-center">통계 계산과 그래픽을 위한 프로그래밍에 많이 사용된다. 전공수업을 위해 R을 사용한 EDA 및 다중회귀분석을 수행하였다.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col col-12 col-md-6">
+      <div class="card p-2 my-2">
+        <img src="{% static "python.png" %}"  class="card-img-top d-inline-block m-auto w-50" alt="...">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title text-center en">Python</h5>
+          <p class="card-text text-center">통계 자료의 시각화에 뛰어나 그래프 작성에 주로 사용하였으며, 현재에는 SSAFY에서의 수업을 통해 알고리즘 문제 해결의 주된 언어로 사용하고 있다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+  
+
+{% endblock content %}

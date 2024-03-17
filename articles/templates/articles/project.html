@@ -1,0 +1,52 @@
+{% extends "articles/base.html" %}
+{% load static %}
+{% block content %}
+
+<div class="container">
+  <div class="row my-3 p-2">
+    <div class="col col-4">
+      <img src=" {% static "bootstrap.png" %}" alt="" class='logo p-3'>
+    </div>
+    <div class="col col-8 d-flex">
+      <div class="pt-5">
+        <h4 >Bootstrap을 활용한 페이지 생성</h4>
+        <p class="text-secondary mt-2">Bootstrap의 a tag의 hover를 사용해서
+          navbar에 효과를 적용하여 시각적인 요소를 추가하였다.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row m-3 p-2">
+    <div class="row p-2">
+      <div class="col col-8">
+        <div class="pt-5">
+          <h4 >R을 활용한 공유자전거 데이터 분석</h4>
+          <p class="text-secondary mt-2"> Kaggle에서 제공하는 공유자전거 데이터를 활용하여
+            EDA를 수행하였다. 독립변수간의 다중공선성을 확인하여 독립변수의 수를 조절하였다.
+          </p>
+        </div>
+      </div>
+      <div class="col col-4">
+        <img src=" {% static "R.png" %}" alt="" class='logo p-3'>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="row p-2">
+    <div class="col col-4">
+      <img src=" {% static "python.png" %}" alt="" class='logo p-3'>
+    </div>
+    <div class="col col-8 d-flex">
+      <div class="pt-5">
+        <h4 >Python을 활용한 데이터 시각화 </h4>
+        <p class="text-secondary mt-2"> WordCloud와 NLTK를 사용하여 수집한 데이터의 감성분석을 진행하고, 이를 시각화하였다.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% endblock content %}

@@ -1,0 +1,36 @@
+{% extends "articles/base.html" %}
+{% load static %}
+{% block content %}
+
+<div class="container">
+  <h3 class="en text-center"> My_info</h3>
+  <div class="row my-3">
+    <div class=" col col-12 col-md-6">
+      <div class="card">
+        <div class="d-flex justify-content-center">
+          <img src="{% static "me.jpg" %}" class="card-img-top w-50" alt="profile">
+        </div>
+        <div class="card-body my-0 py-0">
+          <ul class="list-group list-group-flush">
+            <l1 class="list-group-item text-center pt-0 en">Minchae Hwang</l1>
+            <li class="list-group-item text-center">1997.07.12</li>
+            <li class="list-group-item text-center">ENFP</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col col-12 col-md-6 m-auto">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">건국대학교 응용통계학과</li>
+        <li class="list-group-item">License : ADsP</li>
+        <li class="list-group-item">Language Skills <br>English : TOEIC(800)</li>
+      </ul>
+    </div>
+  </div>
+  <p class="w-25"></p>
+
+  </div>
+</div>
+
+
+{% endblock content %}
